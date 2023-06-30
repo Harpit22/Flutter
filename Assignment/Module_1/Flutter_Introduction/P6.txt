@@ -1,0 +1,15 @@
+void main(){
+  double p = 10000;
+  double r = 5;
+  double t = 1;
+  double SimpleIterest;
+
+  SimpleIterest = (p * r * t) / 100;
+
+  print('''
+  Principal Amount = $p
+  Annual Rate = $r
+  Period Unit of Year = $t
+  Simple Interest = $SimpleIterest''');
+
+}

@@ -1,0 +1,9 @@
+void main(){
+  int base = 10;
+  int hight = 7;
+  double Triangle;
+
+  Triangle = 1/2 * base * hight;
+  print('Area of Circle = $Triangle');
+
+}

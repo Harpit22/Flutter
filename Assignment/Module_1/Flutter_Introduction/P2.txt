@@ -1,0 +1,18 @@
+void main(){
+  int a=10,b=5;
+  int Add;
+  int Sub;
+  int Mul;
+  double Div;
+
+  Add = a + b;
+  Sub = a - b;
+  Mul = a * b;
+  Div = a / b;
+  
+  print('Addition Of Two Number = $Add');
+  print('Subtraction Of Two Number = $Sub');
+  print('Multiplication Of Two Number = $Mul');
+  print('Divition Of Two Number = $Div');
+
+}
