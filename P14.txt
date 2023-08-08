@@ -1,0 +1,10 @@
+void main(){
+
+  int a = 10;
+  int b = 5;
+  int c = 15;
+  dynamic max;
+
+  max = a > b ? (a > c ? a : c ) : (b > c ? b : c );
+  print('$max is Maximum Number');
+}

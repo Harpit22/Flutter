@@ -1,0 +1,12 @@
+ import 'dart:io';
+
+void main(){
+  var n;
+  var table = 1;
+  stdout.write('Enter a Number :');
+  n = int.parse(stdin.readLineSync()!);
+  for(int i=1;i<=10;i++){
+    table = n * i;
+    print('$n * $i = $table');
+  }
+}

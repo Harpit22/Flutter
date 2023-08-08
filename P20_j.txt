@@ -1,0 +1,16 @@
+import 'dart:io';
+
+void main(){
+  int n;
+  int last;
+  int sum = 0;
+  stdout.write('Enter Number :');
+  n = int.parse(stdin.readLineSync()!);
+
+  last = n % 10;
+  while(n>=10) {
+    n = n ~/ 10;
+  }
+  sum = last + n;
+  print('Reverse Number Is : $sum');
+}

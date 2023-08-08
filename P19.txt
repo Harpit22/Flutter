@@ -1,0 +1,45 @@
+import 'dart:io';
+
+void main(){
+  var base;
+  var height;
+  var length;
+  var width;
+  var radius;
+  double store = 0;
+  print('''Show the Guideline and Choice Number 
+  if You Find Out Area Of 
+  triangle Choice 1 number or
+  Rectangle Choice 2 Number or
+  Circle Choice 3 Number.
+  ''');
+
+  int? choice;
+  stdout.write('Enter Number : ');
+  choice = int.parse(stdin.readLineSync()!);
+
+  if(choice == 1){
+    stdout.write('Enter Value Of Base : ');
+    base = int.parse(stdin.readLineSync()!);
+
+    stdout.write('Enter Enter Value Of Height : ');
+    height = int.parse(stdin.readLineSync()!);
+    store = 1/2 * base * height;
+    print('Area Of triangle = $store');
+  }else if(choice == 2){
+    stdout.write('Enter Value Of Length : ');
+    length = double.parse(stdin.readLineSync()!);
+
+    stdout.write('Enter Enter Value Of Width : ');
+    width = double.parse(stdin.readLineSync()!);
+    store = length * width;
+    print('Area Of rectangle = $store');
+  }else if(choice == 3){
+    var pi = 3.14;
+    stdout.write('Enter Value Of Radius : ');
+    radius = int.parse(stdin.readLineSync()!);
+    store = pi * radius * radius;
+    print('Area Of Circle = $store');
+  }
+
+}

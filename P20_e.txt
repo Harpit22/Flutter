@@ -1,0 +1,19 @@
+import 'dart:io';
+
+void main(){
+  var n;
+  var a = 0;
+  var b = 1;
+  var serise;
+  stdout.write('Enter a Number :');
+  n = int.parse(stdin.readLineSync()!);
+  print(a);
+  print(b);
+  for(int i = 2; i < n; i++) {
+    serise = a + b;
+    print(serise);
+    a = b;
+    b = serise;
+
+  }
+}

@@ -1,0 +1,7 @@
+void main(){
+  var n=51;
+  while(n<=60){
+    print(n);
+    n++;
+  }
+}

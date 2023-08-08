@@ -1,0 +1,30 @@
+import 'dart:io';
+
+import 'package:test/expect.dart';
+
+void main(){
+  int n;
+  stdout.write('Enter Number :');
+  n = int.parse(stdin.readLineSync()!);
+  for(int i=1; i<=n; i++){
+    for(int k=0; k<n-i; k++){
+      stdout.write('  ');
+    }
+    for(int j=i; j>0; j--){
+      stdout.write('$j ');
+    }
+    print('');
+  }
+}
+
+OP :----
+
+C:/dart-sdk/bin/dart.exe --enable-asserts C:\Users\Tops\IdeaProjects\project_1\Modul_1_P2.dart
+Enter Number :5
+        1 
+      2 1 
+    3 2 1 
+  4 3 2 1 
+5 4 3 2 1 
+
+Process finished with exit code 0

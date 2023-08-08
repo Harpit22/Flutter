@@ -1,0 +1,32 @@
+import 'dart:io';
+
+import 'package:test/expect.dart';
+
+void main(){
+  int n;
+  int a=1;
+  stdout.write('Enter Number :');
+  n = int.parse(stdin.readLineSync()!);
+  for(int i=1; i<=n; i++){
+    // for(int k=0; k<n-i; k++){
+    //   stdout.write('  ');
+    // }
+    for(int j=1; j<=i; j++){
+      stdout.write(a%2);
+      stdout.write(' ');
+      a++;
+    }
+    print('');
+  }
+}
+
+OP :----
+
+Enter Number :5
+1 
+0 1 
+0 1 0 
+1 0 1 0 
+1 0 1 0 1 
+
+Process finished with exit code 0

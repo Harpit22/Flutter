@@ -1,0 +1,12 @@
+import 'dart:io';
+
+void main(){
+  var n;
+  var fact = 1;
+  stdout.write('Enter a Number :');
+  n = int.parse(stdin.readLineSync()!);
+  for(int i=1;i<=n;i++){
+    fact *= i;
+  }
+  print('Factorial Number = $fact');
+}

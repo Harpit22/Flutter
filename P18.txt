@@ -1,0 +1,46 @@
+import 'dart:io';
+
+void main(){
+  double? a;
+  stdout.write('Enter First Number : ');
+  a = double.parse(stdin.readLineSync()!);
+
+  double? b;
+  stdout.write('Enter Second Number : ');
+  b = double.parse(stdin.readLineSync()!);
+
+  print('''*** Choice Which Type Calculate and Enter Symbol ***
+  Addition = + 
+  Subtraction = -
+  Multiplication = *
+  Division = /''');
+
+  String? choice;
+  stdout.write('Enter Symbol : ');
+  choice = stdin.readLineSync();
+  switch(choice){
+    case '+':
+      {
+        print('Addition Of Two Number $a + $b = ${a+b}');
+        break;
+      }
+    case "-" :
+      {
+        print('Subtractyion Of Two Number $a - $b = ${a-b}');
+        break;
+      }
+    case "*" :
+      {
+        print('Multiplication Of Two Number $a * $b = ${a * b}');
+        break;
+      }
+    case "/" :
+      {
+        print('Division OF Two Number $a / $b = ${a/b}');
+        break;
+      }
+    default :
+      print('Pleas Enter walid Number!!!');
+      break;
+  }
+}

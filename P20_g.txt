@@ -1,0 +1,17 @@
+import 'dart:io';
+
+void main(){
+  int n;
+  int a;
+  int reverse = 0;
+  stdout.write('Enter Number :');
+  n = int.parse(stdin.readLineSync()!);
+  double i = n.toDouble();
+  while(n!=0) {
+    a = n % 10;
+    reverse = reverse * 10 + a;
+    i = i.toInt() / 10;
+    n = i.toInt();
+  }
+  print('Reverse Number Is : $reverse');
+}

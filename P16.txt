@@ -1,0 +1,55 @@
+import 'dart:io';
+
+void main(){
+  int? math;
+  int? eng;
+  int? guj;
+  int? com;
+  int? sci;
+  int sum = 0;
+  double per = 0;
+
+  print('*** Emter Student Marks in less than or equal 100 ***');
+  stdout.write('Maths = ');
+  math = int.parse(stdin.readLineSync()!);
+  stdout.write('Englis = ');
+  eng = int.parse(stdin.readLineSync()!);
+  stdout.write('Gujarati = ');
+  guj = int.parse(stdin.readLineSync()!);
+  stdout.write('Computer = ');
+  com = int.parse(stdin.readLineSync()!);
+  stdout.write('Science = ');
+  sci = int.parse(stdin.readLineSync()!);
+
+  sum = math + eng + guj + com + sci;
+
+  per = sum / 5;
+  print("Total Subject Mark = $sum");
+  print('Percentage of Student = $per');
+
+  if(per > 75 ) {
+    print('Distinction');
+  }else if(per > 60 && per <= 75){
+    print('First Class');
+  }else if(per > 50 && per <= 60){
+    print('Second Class');
+  }else if(per > 35 && per <= 50){
+    print('Pass Class');
+  }else{
+    print('Fail!!!');
+  }
+}
+
+
+
+
+
+*** Emter Student Marks in less than or equal 100 ***
+Maths = 60
+Englis = 42
+Gujarati = 55
+Computer = 65
+Science = 74
+Total Subject Mark = 296
+Percentage of Student = 59.2
+Second Class
